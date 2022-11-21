@@ -1,15 +1,17 @@
-Algoritmo "ex3"
-//Faça um algoritmo que calcule o combustível gasto em uma viagem de 2000 Km, com autonomia de 10 litros/Km.
+Algoritmo "Uso do leia/1"
+// Faça um algoritmo que leia dois números inteiros e mostre a soma deles
 
 
 Var
 //
-a,b:inteiro
+n1,n2:inteiro
 
 Inicio
 //
-a<-2000
-b<-10
-escreva("O combustivel gasto é:", a/b)
+escreval("Primeiro número:")
+leia(n1)
+escreval("Segundo número:")
+leia(n2)
+escreva("O resultado da soma é:", n1+n2)
 
 Fimalgoritmo
