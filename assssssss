@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jogo da Forca</title>
+  </head> 
+  <body>
+    <h1>Jogo da Forca</h1>
+    <div id="word-display"></div>
+    <div id="attempts-left">Tentativas restantes: <span id="attempts">6</span></div>
+    <div id="guess-input">
+      <label for="letter">Digite uma letra: </label>
+      <input type="text" id="letter" maxlength="1">
+      <button onclick="guessLetter()">Adivinhar Letra</button>
+    </div>
+    <div id="word-guess">
+      <label for="guess-word">Adivinhar a palavra: </label>
+      <input type="text" id="guess-word">
+      <button onclick="guessWord()">Adivinhar Palavra</button>
+    </div>
+    <button onclick="resetGame()">Reiniciar Jogo</button>
+
+    <script>
+      // Lista de palavras para o jogo da forca
+      const words = ['javascript', 'html', 'css', 'programming', 'developer'];
+
+      // Variáveis do jogo
+      let selectedWord;
+      let remainingAttempts;
+      let guessedLetters;
+      let wordDisplay;
+
+      // Função para reiniciar o jogo
+      function resetGame() {
+        selectedWord = words[Math.floor(Math.random() * words.length)];
+        remainingAttempts = 6;
+        guessedLetters = [];
+        wordDisplay = Array(selectedWord.length).fill('_');
+        updateGameDisplay();
+      }
+
+      // Função para adivinhar uma letra
+      function guessLetter() {
+        // Código para adivinhar uma letra (mesmo código do exemplo anterior)
+        // ...
+
+        updateGameDisplay();
+      }
+
+      // Função para adivinhar a palavra
+      function guessWord() {
+        const guessInput = document.getElementById('guess-word');
+        const guess = guessInput.value.toLowerCase();
+
+        if (guess === selectedWord) {
+          alert('Você acertou! A palavra era: ' + selectedWord);
+          resetGame();
+        } else {
+          alert('Você errou! Tente novamente.');
+        }
+      }
+
+      // Função para atualizar a exibição do jogo na tela
+      function updateGameDisplay() {
+        // Atualizar a exibição do jogo, incluindo a palavra oculta e as tentativas restantes
+        // ...
+      }
+
+      // Iniciar o jogo
+      resetGame();
+    </script>
+  </body>
+</html>
