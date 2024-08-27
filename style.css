@@ -1,70 +1,67 @@
-/* styles.css */
+html {
+    background-image: url('Proz-Guarulhos-2.jpeg');
+    background-size: cover;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: white;
-    color: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    border: 1px solid black;
-}
-
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-
-
-nav ul {
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-    border: 1px solid black;
-}
-
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-
-
-/* footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
+.form-container {
+    background-color: #f7f2fd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     width: 100%;
-} */
+    max-width: 400px;
+    position: relative; /* Necessário para a posição absoluta da imagem */
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #000;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(122, 77, 248);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: rgb(119, 0, 255);
+}
 
 img {
-    width: 120px;
-    border: 1px solid black;
-    
-}
-
-p {
-    text-align: center;
+    width: 50px;
+    border-radius: 25px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
