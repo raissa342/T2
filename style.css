@@ -126,7 +126,7 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 @media (max-width: 768px) {
@@ -264,6 +264,72 @@ p {
     color: #4e4e4e;
 }
 
-h2 {
+h2, p {
     text-align: center;
 }
+
+/* .cardapio {
+    border: 1px solid black;
+} */
+
+.cardapio {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.dish-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.dish-box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.dish-details {
+    padding: 10px;
+}
+
+.dish-details h2 {
+    margin-top: 0;
+}
+
+.dish-image {
+    width: 100%;
+}
+
+.dish-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top: 1px solid #ddd;
+}
+
+#cardapio ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#cardapio ul li {
+    margin-bottom: 10px;
+}
+
+.imagen {
+    width: 35px;
+    margin-top: -20px;
+    padding: 0px;
+    margin-bottom: -20px;
+    margin-left: 635px;
+}
+
+
