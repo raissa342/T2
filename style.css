@@ -1,67 +1,269 @@
-html {
-    background-image: url('Proz-Guarulhos-2.jpeg');
-    background-size: cover;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+header {
+    background-color: #ffffff;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; 
+}
+
+nav ul li {
+    position: relative;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #b98d53; 
+}
+
+nav ul li a::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; 
+    background-color: #b98d53; 
+    transform: scaleX(0); 
+    transform-origin: bottom right; 
+    transition: transform 0.3s ease; 
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1); 
+    transform-origin: bottom left; 
+}
+
+main {
+    padding: 100px 20px 20px;
+}
+
+.quem-somos {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    padding: 70px;
 }
 
-.form-container {
-    background-color: #f7f2fd;
-    padding: 20px;
+.content {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.text {
+    flex: 1;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.text h1 {
+    margin-top: 0;
+}
+
+.images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 100%;
-    max-width: 400px;
-    position: relative; /* Necessário para a posição absoluta da imagem */
 }
 
-h1 {
-    margin-bottom: 20px;
+.images img:last-of-type {
+    margin-bottom: 0; 
+}
+
+footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    color: black;
+    padding: 10px 0;
 }
 
-label {
-    display: block;
-    margin: 10px 0 5px;
-    color: #000;
-}
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
 
-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-}
-
-button {
-    background-color: rgb(122, 77, 248);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    text-align: center;
-}
-
-button:hover {
-    background-color: rgb(119, 0, 255);
+    .text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
 
 img {
-    width: 50px;
-    border-radius: 25px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    width: 120px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.garfo {
+    width: 35px;
+    margin-left: 270px;
+    margin-top: -20px;
+    padding: 0px;
+    margin-bottom: -5px;
+}
+
+.qmtext {
+    width: 500px;
+    color: #4e4e4e;
+    margin-left: 40px;
+    
+}
+
+h1 {
+    font-size: 40px;
+    font-family: cursive;
+}
+
+#localizacao {
+    text-align: center; 
+    padding: 40px 20px; 
+}
+
+#localizacao iframe {
+    width: 80%; 
+    max-width: 1200px; 
+    height: 500px; 
+    border: 0;
+}
+
+p {
+    color: #4e4e4e;
+}
+
+.faca {
+    margin-top: 10px;
+}
+
+.final {
+    color: white;
+}
+
+/* Estilos para a seção de contato */
+#contato {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contato h1 {
+    margin-bottom: 20px;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+#contato .form-group {
+    width: 90%; 
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+#contato input,
+#contato textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contato textarea {
+    height: 120px;
+}
+
+#contato button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e6e6e6;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#contato button:hover {
+    background-color: #9e9d9d; 
+}
+
+#contato label {
+    margin-left: 18px;
+}
+
+.card {
+    font-weight: 200px;
+    color: black;
+    font-family: cursive;
+}
+
+#cardapio ul li {
+    color: #4e4e4e;
+}
+
+h2 {
+    text-align: center;
 }

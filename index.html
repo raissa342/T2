@@ -3,25 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>VNREST - Restaurante em Venda Nova</title>
+    <link rel="icon" href="data:image/png;base64,..."> <!-- Substitua pelo seu ícone -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="form-container">
-        <img src="download.png" alt="Logo">
-        <h1>Login</h1>
-        <form id="loginForm">
-            <div class="input-container">
-                <label for="username">Login:</label>
-                <input type="text" id="username" name="username" required>
+    <header>
+        <div class="container">
+            <img class="faca" src="VN ST-Photoroom.png" alt="Logo do VNREST"> 
+            <nav>
+                <ul>
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
+                    <li><a href="#cardapio">Cardápio do Dia</a></li>
+                    <li><a href="#contato">F | R</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="quem-somos" class="quem-somos">
+            <div class="content">
+                <div class="text">
+                    <h1 class="qms">Quem Somos</h1>
+                    <img class="garfo" src="download.png">
+                    <p class="qmtext">Bem-vindo ao VNREST, o novo destino para a comida mineira em Venda Nova! Inaugurado em Agosto de 2024, nosso restaurante traz o melhor da culinária de Minas Gerais para você. Com pratos tradicionais feitos com ingredientes frescos e de qualidade, oferecemos uma verdadeira imersão nos sabores e na tradição mineira. Nosso ambiente é acolhedor e familiar. Venha nos visitar e descubra o sabor autêntico de Minas Gerais!</p>
+                </div>
+                <div class="images">
+                    <img src="https://www.pracadopapa.com.br/wp-content/uploads/2022/01/Melhores-Restaurantes-de-Belo-Horizonte.jpg" alt="Imagem do restaurante 1">
+                </div>
             </div>
-            <div class="input-container">
-                <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Entrar</button>
-        </form>
-    </div>
-    <script src="script.js"></script>
+        </section>
+
+        <section id="localizacao" class="localizacao">
+            <h1>Localização</h1>
+            <p>Rua venda nova, 123 - Venda Nova, MG, 00000-000</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11456.208548829181!2d-43.97268987056773!3d-19.81581935474951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa68fc209dcada5%3A0x1772e578d2c6e4f4!2sVenda%20Nova%2C%20Belo%20Horizonte%20-%20MG!5e1!3m2!1spt-BR!2sbr!4v1724890971564!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section id="cardapio" class="cardapio">
+            <h1>Cardápio</h1>
+            <h2 class="card">Confira as opções do nosso cardápio para hoje:</h2>
+            <h2>Fogão a Lenha</h2>
+            <ul>
+                <li>Feijão Tropeiro</li>
+                <li>Arroz com Pequi</li>
+                <li>Frango com Quiabo</li>
+                <li>Docinho de Leite</li>
+            </ul>
+            <h2>Sobremesas</h2>
+        </section>
+
+        <section id="contato" class="contato">
+            <h1>Feedback | Reclame Aqui!</h1>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p class="final">&copy; 2024 VNREST. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
