@@ -279,7 +279,7 @@ h1, h2 {
 
 .dish-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
 
@@ -288,27 +288,18 @@ h1, h2 {
     flex-direction: column;
     border: 1px solid #b98d53;
     border-radius: 8px;
-    overflow: hidden;
     background-color: #fff;
 }
 
-.dish-details {
-    padding: 10px;
-}
 
-.dish-details h2 {
-    margin-top: 0;
-}
 
 .dish-image {
-    width: 100%;
+    width: auto;
 }
 
 .dish-image img {
     width: 100%;
-    height: auto;
-    display: block;
-    border-top: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 #cardapio ul {
@@ -317,7 +308,7 @@ h1, h2 {
 }
 
 #cardapio p {
-    font-size: 17px;
+    font-size: 15px;
 }
 
 #cardapio ul li {
@@ -328,8 +319,8 @@ h1, h2 {
     width: 35px;
     margin-top: -20px;
     padding: 0px;
-    margin-bottom: -20px;
-    margin-left: 635px;
+    margin-bottom: -45px;
+    margin-left: 720px;
 }
 
 #cardapio button {
@@ -339,6 +330,8 @@ h1, h2 {
     border: 1px solid #b98d53;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    position: relative;
+    left: 370px;
 }
 
 #cardapio button:hover {
@@ -350,4 +343,17 @@ h1, h2 {
     color: black;
     text-decoration: none;
 }
+
+#cardapio h2 {
+    font-size: 20px;
+}
+
+.imagenst { 
+    width: 35px;
+    margin-top: -20px;
+    padding: 0px;
+    margin-bottom: -15px;
+    margin-left: 720px;
+}
+
 
