@@ -129,7 +129,22 @@ footer {
     padding: 5px 0;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 760px) and (max-width: 1080px) {
+    body {
+        padding: 30px;
+    }
+
+    .section {
+        flex-direction: column;
+        padding: 50px 100px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 759px) {
     .content {
         flex-direction: column;
     }
@@ -142,12 +157,6 @@ footer {
 
 img {
     width: 120px;
-}
-
-h1 {
-    text-align: center;
-    font-size: 30px;
-    font-family: cursive;
 }
 
 .garfo {
@@ -163,11 +172,6 @@ h1 {
     color: #4e4e4e;
     margin-left: 40px;
     
-}
-
-h1 {
-    font-size: 40px;
-    font-family: cursive;
 }
 
 #localizacao {
@@ -253,99 +257,31 @@ p {
     margin-left: 18px;
 }
 
-.card {
-    font-weight: 200px;
-    color: black;
-    font-family: cursive;
-}
-
-#cardapio ul li {
-    color: #4e4e4e;
-}
-
 h2, p {
     text-align: center;
 }
 
-
-.cardapio {
-    padding: 20px;
-    background-color: #ffffff;
-}
-
-h1, h2 {
+h1 {
     color: #333;
+    font-family: cursive;
+    text-align: center;
+    font-size: 40px;
 }
 
-.dish-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.dish-box {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #b98d53;
-    border-radius: 8px;
-    background-color: #fff;
+h2 {
+    color: #333;
+    text-align: center;
+    font-family: cursive;
 }
 
 
-
-.dish-image {
-    width: auto;
-}
-
-.dish-image img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-#cardapio ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#cardapio p {
-    font-size: 15px;
-}
-
-#cardapio ul li {
-    margin-bottom: 10px;
-}
 
 .imagen {
     width: 35px;
     margin-top: -20px;
     padding: 0px;
     margin-bottom: -45px;
-    margin-left: 720px;
-}
-
-#cardapio button {
-    width: 210px;
-    border-radius: 20px;
-    height: 50px;
-    border: 1px solid #b98d53;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    position: relative;
-    left: 370px;
-}
-
-#cardapio button:hover {
-    background-color: #b98d53; 
-}
-
-#cardapio a {
-    font-size: 20px;
-    color: black;
-    text-decoration: none;
-}
-
-#cardapio h2 {
-    font-size: 20px;
+    margin-left: 635px;
 }
 
 .imagenst { 
@@ -353,7 +289,5 @@ h1, h2 {
     margin-top: -20px;
     padding: 0px;
     margin-bottom: -15px;
-    margin-left: 720px;
+    margin-left: 635px;
 }
-
-
