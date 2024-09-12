@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.game-container {
+    margin: 20px 0;
+}
+
+.choice-btn{
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#result-message {
+    font-size: 20px;
+    margin-top: 90px;
+}
+
+.images img {
+    width: 200px;
+    height: 200px;
+    margin-top: 55px;
+}
+
+#user-choice-image {
+    margin-right: 150px;
+}
+
+#computer-choice-image {
+    margin-left: 150px;
+}
