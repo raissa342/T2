@@ -22,7 +22,7 @@
             </nav>
         </div>
     </header>
-    <section class="section">
+    
     <main>
         <section id="quem-somos" class="quem-somos">
             <div class="content">
@@ -45,16 +45,104 @@
             <h2>Horário de funcionamento</h2>
             <p>Segunda à sexta, de 11:00 até 16:00</p>
         </section>
-        <img class="imagenst" src="download.png">
+<img class="imagenst" src="download.png">
 
-        <section id="cardapio">
-            <h1>Cardápio</h1>
-            <h2>Confira as opções do nosso cardápio para hoje:</h2>
-        </section>
+        <section>
+            <div class="menu">
+                <h1 id="section">Menu</h1>
+                <h2 id="sec">Confira nossas opções para hoje:</h2>
+                <div id="menu_row">
+                    <div id="menu_col">
+                        <h2>Almoço</h2>
+                        <div class="box">
+                            <div id="img-menu">
+                                <img src="img/tropeiro.jfif" alt="">
+                            </div>
+                            <div>
+                                <h3>Feijão Tropeiro</h3>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div id="img-menu">
+                                <img src="img/arroztem.jpeg" alt="">
+                            </div>
+                            <div>
+                                <h3>Arroz Temperado</h3>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div id="img-menu">
+                                <img src="img/lasanha.jfif" alt="">
+                            </div>
+                            <div>
+                                <h3>Lasanha</h3>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div id="menu_col">
+                        <h2>Sobremesas</h2>
+                        
+                        <div class="box">
+                            <div id="img-menu">
+                                <img class="ambrosia" src="img/ambrosia.webp" alt="">
+                            </div>
+                            <div>
+                                <h3>Ambrosia</h3>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div id="img-menu">
+                                <img src="img/sorvete.jfif" alt="">
+                            </div>
+                            <div>
+                                <h3>Sorvete</h3>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div id="img-menu">
+                                <img src="img/doce.jfif" alt="">
+                            </div>
+                            <div>
+                                <h3>Doce de leite</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu_col">
+                        <h2>Bebidas</h2>
+                        
+                        <div class="box">
+                            <div id="img-menu">
+                                <img class="refri" src="img/1l.webp" alt="">
+                            </div>
+                            <div>
+                                <h3>Refrigerante 1L</h3>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div id="img-menu">
+                                <img class="refri2" src="img/2l.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3>Refrigerante 2L</h3>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div id="img-menu">
+                                <img class="suco" src="img/copos_com_sucos_de_frutas_-_suco_natural_-_assai_atacadista.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3>Suco Natural</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            </section>
+            <button class="cardapio" type="submit"><a href="cardapio.html">Saiba Mais</a></button>
         
-        
-        
-        <!-- <img class="imagen" src="download.png"> -->
+        <img class="imagen" src="download.png">
 
         <section id="contato" class="contato">
             <h1>Nos dê sua opinião</h1>
@@ -71,7 +159,7 @@
                     <label for="mensagem">Mensagem:</label>
                     <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
                 </div>
-                <button type="submit" onclick="contato()">Enviar</button>
+                <button type="submit">Enviar</button>
             </form>
         </section>
         
@@ -80,7 +168,5 @@
     <footer>
         <p class="final">&copy; 2024 VNREST. Todos os direitos reservados.</p>
     </footer>
-</section>
-    <script src="script.js"></script>
 </body>
 </html>
