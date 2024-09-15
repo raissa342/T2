@@ -129,34 +129,14 @@ footer {
     padding: 5px 0;
 }
 
-@media (min-width: 760px) and (max-width: 1080px) {
-    body {
-        padding: 30px;
-    }
-
-    .section {
-        flex-direction: column;
-        padding: 50px 100px;
-    }
-
-    p {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 759px) {
-    .content {
-        flex-direction: column;
-    }
-
-    .text {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-}
-
 img {
     width: 120px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
 }
 
 .garfo {
@@ -172,6 +152,11 @@ img {
     color: #4e4e4e;
     margin-left: 40px;
     
+}
+
+h1 {
+    font-size: 40px;
+    font-family: cursive;
 }
 
 #localizacao {
@@ -257,23 +242,16 @@ p {
     margin-left: 18px;
 }
 
+
 h2, p {
     text-align: center;
 }
 
-h1 {
+
+h1, h2 {
     color: #333;
     font-family: cursive;
-    text-align: center;
-    font-size: 40px;
 }
-
-h2 {
-    color: #333;
-    text-align: center;
-    font-family: cursive;
-}
-
 
 
 .imagen {
@@ -281,13 +259,112 @@ h2 {
     margin-top: -20px;
     padding: 0px;
     margin-bottom: -45px;
-    margin-left: 635px;
+    margin-left: 720px;
 }
+
 
 .imagenst { 
     width: 35px;
     margin-top: -20px;
     padding: 0px;
     margin-bottom: -15px;
-    margin-left: 635px;
+    margin-left: 720px;
 }
+
+
+#menu {
+    padding: 15px 0;
+}
+
+#section{
+    padding: 25px 0;
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+    margin-bottom: -10px;
+}
+
+#menu_row {
+    display: flex;
+    padding: 0 100px;
+}
+
+#menu_col {
+    box-shadow: 2px 2px 2px #bbb;
+    border: 1px solid #bbb;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    flex: 1;
+}
+
+#menu_col h2 {
+    background-color:#b98d53;
+    color: #fff;
+    text-align: center;
+    font-family: cursive;
+    margin-top: 0;
+}
+
+#img-menu img{
+    border-radius: 100px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec{
+    text-align: center;
+    font-family: cursive;
+} 
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+}
+
+#img-menu .ambrosia {
+    width: 75%;
+}
+
+#img-menu .refri {
+    width: 60%;
+}
+
+#img-menu .refri2 {
+    width: 95%;
+}
+
+#img-menu .suco {
+    width: 65%;
+}
+
+.cardapio {
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid #b98d53;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #fff;
+}
+
+.cardapio a {
+    text-decoration: none;
+    color: #b98d53;
+}
+
+.cardapio a:hover {
+    color: #fff;
+}
+
+.cardapio:hover {
+    background-color: #b98d53;
+} 
+
