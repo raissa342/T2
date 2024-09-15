@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h3 {
+    font-family: cursive;
+}
+
+.main {
+    width: 1170px;
+    margin: 100px auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-title h1 {
+    position: relative;
+    display: inline-block;
+    font-size: 35px;
+}
+
+.section-title h2:before {
+    content: '';
+    position: absolute;
+    width: 69px;
+    height: 3px;
+    background-color: #a97e47;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.section-title h2 {
+    padding-top: 2px;
+}
+
+img {
+    
+}
