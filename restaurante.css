@@ -4,6 +4,8 @@ body {
     padding: 0;
 }
 
+/* topo */
+
 header {
     background-color: #ffffff;
     color: white;
@@ -45,6 +47,8 @@ nav ul li {
     margin-left: 20px;
 }
 
+
+
 nav ul li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -76,6 +80,7 @@ nav ul li a:hover::after {
     transform-origin: bottom left; 
 }
 
+/* quem somos */
 main {
     padding: 100px 20px 20px;
 }
@@ -122,11 +127,22 @@ main {
     margin-bottom: 0; 
 }
 
+/* footer */
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 5px 0;
+    padding: 15px 0;
+}
+
+.numero i {
+    margin-left: 10px; 
+    color: #b98d53;
+}
+
+.numero {
+    list-style-type: none;
 }
 
 img {
@@ -159,6 +175,8 @@ h1 {
     font-family: cursive;
 }
 
+/* localizacao */
+
 #localizacao {
     text-align: center; 
     padding: 40px 20px; 
@@ -183,7 +201,7 @@ p {
     color: white;
 }
 
-/* Estilos para a seção de contato */
+/* opiniao*/
 #contato {
     padding: 40px 20px;
     text-align: center;
@@ -271,7 +289,7 @@ h1, h2 {
     margin-left: 720px;
 }
 
-
+/* cardapio */
 #menu {
     padding: 15px 0;
 }
@@ -316,6 +334,7 @@ h1, h2 {
 #sec{
     text-align: center;
     font-family: cursive;
+    font-size: 25px;
 } 
 
 .box {
@@ -342,14 +361,20 @@ h1, h2 {
     width: 65%;
 }
 
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+}
+
 .cardapio {
-    width: 160px;
+    width: 150px;
     height: 60px;
     text-align: center;
-    margin: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 1px solid #b98d53;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     background-color: #fff;
@@ -358,6 +383,9 @@ h1, h2 {
 .cardapio a {
     text-decoration: none;
     color: #b98d53;
+    display: block; 
+    height: 100%; 
+    line-height: 60px; 
 }
 
 .cardapio a:hover {
@@ -366,5 +394,44 @@ h1, h2 {
 
 .cardapio:hover {
     background-color: #b98d53;
-} 
+}
 
+#img-menu .ambrosia {
+    width: 75%;
+}
+
+#img-menu .refri {
+    width: 60%;
+}
+
+#img-menu .refri2 {
+    width: 90%;
+}
+
+#img-menu .suco {
+    width: 60%;
+}
+
+#img-menu .cerveja {
+    width: 70%;
+}
+
+#img-menu .caixa {
+    width: 60%;
+}
+
+#img-menu .l {
+    width: 50%;
+}
+
+#img-menu .cr {
+    width: 80%;
+}
+
+#img-menu .slata {
+    width: 50%;
+}
+
+#img-menu .re {
+    width: 85%;
+}
